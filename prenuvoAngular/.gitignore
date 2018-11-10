@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# local pictures
+/src/assets
+# packets, instead use package.json to install the packages using NPM
+/node_modules
+# Utilize this only if you are writing end to end application, this is only front end
+/e2e
+/dist
