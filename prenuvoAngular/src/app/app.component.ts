@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app';
+export class AppComponent  {
+  title = 'Prenuvo Interview';
+  public TodayTime;
+
+  public constructor() {
+    this.TodayTime  = Date.now();
+  }
+
+  public getTodayTime () {
+    return this.TodayTime;
+  }
 }
