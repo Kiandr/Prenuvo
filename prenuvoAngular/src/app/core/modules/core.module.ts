@@ -1,3 +1,4 @@
+import { CheckinComponent } from './../components/checkin/checkin.component';
 import { GridComponent } from './../components/grid/grid.component';
 import { GridService } from './../services/grid.service';
 import { NgModule } from '@angular/core';
@@ -16,8 +17,9 @@ import { FormsModule } from '@angular/forms';
 
   ],
   providers: [
-    GridService // Dependency Injection Registration Domain
+    GridService, // Dependency Injection Registration Domain
+    CheckinComponent
   ],
-  bootstrap: [GridComponent]
+  bootstrap: []
 })
 export class CoreModule { }

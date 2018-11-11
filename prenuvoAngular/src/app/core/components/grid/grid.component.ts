@@ -1,6 +1,6 @@
 import { GridModel } from './../../models/grid-model';
 import { GridService } from './../../services/grid.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 
 @Component({
@@ -28,8 +28,10 @@ export class GridComponent implements OnInit {
     this.model.metadataUri = '';
     this.model.maxRowsPerPage = 10;
   }
-  // Setup the components with grid model
-  public init( gridModel: GridModel) {
+
+  // tslint:disable-next-line:use-life-cycle-interface
+  public ngOnDestroy() {
+    console.log('Grid component was destroyed');
   }
 
   // Display component in the grid module
