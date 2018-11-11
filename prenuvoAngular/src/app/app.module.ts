@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CheckinComponent } from './core/components/checkin/checkin.component';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     GridComponent,
