@@ -5,11 +5,11 @@ enum Condition {
    Average= 2,
    Poor = 3
 }
-export abstract class EnumCore {
+export  class EnumCore {
   public static model = Condition;
   public constructor() {
   }
-  public static doSomething(): any {
+  public static getEnum(): any {
     return this.model;
   }
 }
